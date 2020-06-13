@@ -24,21 +24,22 @@
   </head>
 
   <body>
-    <nav>
-      <ul>
-      </ul>
+    <nav id="navbar" class="navBar">
       <div class="toggle">
         <i class="fa fa-bars menu"></i>
       </div>
-      <ul class="active">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">For Students</a></li>
-        <li><a href="#">For Colleges</a></li>
-        <li><a href="#">For Companies</a></li>
-        <!-- <li><a href="#">Contact</a></li> -->
-      </ul>
+      <div class="nav-list">
+        <ul class="active">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">For Students</a></li>
+          <li><a href="#">For Colleges</a></li>
+          <li><a href="#">For Companies</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="row">
+      <!-- <div class="space col-md-1">
+      </div> -->
       <div class="left col-md-6">
         <div class="heading">
           <h3>Transforming the educational opportunities</h3>
@@ -158,5 +159,27 @@
       })
     });
   </script>
+  <script>
+    $(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navBar");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});
+  </script>
+  <!-- <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script> -->
   </body>
 </html>
