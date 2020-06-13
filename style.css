@@ -96,10 +96,6 @@ input.active.focus {
     display: inline-block;
 }
 
-span {
-    margin: 50px 0px;
-}
-
 .checkbox-field {
     display: inline-block;
     text-align: center;
