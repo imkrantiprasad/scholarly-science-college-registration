@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Russo+One&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #151515;
+}
+
+.row {
+    width: 96%;
+    margin-left: 2%;
+}
+
+.left {
+    margin-top: 100px;
+}
+
+.heading {
+    font-family: 'Russo One', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+    float: right;
+}
+
+img {
+    float: right;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    color: rgba(129, 118, 118, 0.8);
+    font-size: 20px;
+    /* margin-left: 75px; */
+    float: right;
+}
+
+.right {
+    margin-top: 100px;
+
+}
+
+.form {
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.sign-in-section {
+    padding: 40px;
+}
+
+.sign-in-section h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #000080;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.inp {
+    width: 300px !important;
+    padding: 15px !important;
+    border: 1px solid rgba(177, 237, 251, 0.9);
+    border-radius: 50px !important;
+    box-shadow: 0px 0px 10px 2px rgba(177, 237, 251, 0.9);
+}
+
+#phone {
+    padding-left: 45px !important;
+}
+
+input:focus,
+input:active:focus,
+input.active:focus,
+input.focus,
+input:active.focus,
+input.active.focus {
+    outline: none !important;
+    outline: 0 !important;
+}
+
+.form-field input::placeholder {
+    color: #AB9F9F;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-field input:focus {
+    border: 2px solid #ADD3EC;
+}
+
+.form-field input[type="checkbox"] {
+    display: inline-block;
+}
+
+#rememberMe {
+    margin-right: 5px;
+}
+
+.checkbox-field {
+    display: inline-block;
+    text-align: center;
+    color: #AB9F9F;
+    font-size: 15px;
+}
+
+.checkbox-field a {
+    color: #ADD3EC;
+}
+
+.btn-signin {
+    width: 50%;
+    margin-left: 25%;
+    padding: 5px 8px;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    background: linear-gradient(90deg, rgba(172, 182, 229, 0.7) 0%, rgba(134, 253, 232, 0.7) 100%);
+    color: #000080;
+}
+
+@media screen and (max-width: 992px) {
+    img {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .left {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .inp {
+        width: 100% !important;
+    }
+}
