@@ -1,9 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Oxygen', sans-serif;
     color: #151515;
+
+}
+
+nav {
+    width: 100%;
+    background: white;
+    box-shadow: 0 3px 5px #a3a1a1
+}
+
+ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    color: black;
+}
+
+ul li:hover {
+    /* background-color: black; */
+    /* color: white; */
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #3b93ff;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+@media (max-width:768px) {
+    .toggle {
+        display: block;
+    }
+
+    ul {
+        width: 100%;
+        display: block;
+    }
+
+    ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .active {
+        display: none;
+    }
 }
 
 .row {
