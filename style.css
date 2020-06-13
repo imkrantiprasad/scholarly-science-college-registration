@@ -96,8 +96,8 @@ input.active.focus {
     display: inline-block;
 }
 
-#rememberMe {
-    margin-right: 5px;
+span {
+    margin: 50px 0px;
 }
 
 .checkbox-field {
